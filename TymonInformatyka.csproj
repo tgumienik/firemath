@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2911634E-93B1-41B9-90C6-24809C30F6D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>fireTools</RootNamespace>
+    <AssemblyName>fireTools</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>firemath_KON_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Downloads\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnitOf">
+      <HintPath>..\..\..\..\OneDrive\Pulpit\Download Project\Videos\UnitOf-master\UnitOf.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_KonwerterTemperatury.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_KonwerterTemperatury.Designer.cs">
+      <DependentUpon>Math_KonwerterTemperatury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_KonwerterSily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_KonwerterSily.Designer.cs">
+      <DependentUpon>Math_KonwerterSily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_KonwerterSzybkosci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_KonwerterSzybkosci.Designer.cs">
+      <DependentUpon>Math_KonwerterSzybkosci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_KonwerterMasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_KonwerterMasy.Designer.cs">
+      <DependentUpon>Math_KonwerterMasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_KonwerterDlugosci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_KonwerterDlugosci.Designer.cs">
+      <DependentUpon>Math_KonwerterDlugosci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_PICulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_PICulator.Designer.cs">
+      <DependentUpon>Math_PICulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_PoleFigury_Wzor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_PoleFigury_Wzor.Designer.cs">
+      <DependentUpon>Math_PoleFigury_Wzor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math_PoleFigury.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Math_PoleFigury.Designer.cs">
+      <DependentUpon>Math_PoleFigury.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_KonwerterTemperatury.resx">
+      <DependentUpon>Math_KonwerterTemperatury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_KonwerterSily.resx">
+      <DependentUpon>Math_KonwerterSily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_KonwerterSzybkosci.resx">
+      <DependentUpon>Math_KonwerterSzybkosci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_KonwerterMasy.resx">
+      <DependentUpon>Math_KonwerterMasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_KonwerterDlugosci.resx">
+      <DependentUpon>Math_KonwerterDlugosci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_PICulator.resx">
+      <DependentUpon>Math_PICulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_PoleFigury_Wzor.resx">
+      <DependentUpon>Math_PoleFigury_Wzor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Math_PoleFigury.resx">
+      <DependentUpon>Math_PoleFigury.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\figura_triangle.png" />
+    <None Include="Resources\New Project.png" />
+    <None Include="Resources\cac.png" />
+    <None Include="Resources\black.png" />
+    <None Include="Resources\figura_square.png" />
+    <None Include="Resources\figura_rectangle.png" />
+    <None Include="Resources\white.png" />
+    <None Include="Resources\figura_parallelogram.png" />
+    <None Include="Resources\figura_rhombus1.png" />
+    <None Include="Resources\figura_rhombus2.png" />
+    <None Include="Resources\figura_trapeze.png" />
+    <None Include="Resources\figura_kite.png" />
+    <None Include="Resources\area_square.png" />
+    <None Include="Resources\area_rectangle.png" />
+    <None Include="Resources\area_parallelogram.png" />
+    <None Include="Resources\area_circle.png" />
+    <None Include="Resources\area_rhombus.png" />
+    <None Include="Resources\area_triangle.png" />
+    <None Include="Resources\area_trapeze.png" />
+    <None Include="Resources\area_kite.png" />
+    <None Include="Resources\ico_polefigury.png" />
+    <None Include="Resources\ico_lengthconverter.png" />
+    <None Include="Resources\ico_massconverter.png" />
+    <None Include="Resources\preview_massconverter.png" />
+    <None Include="Resources\preview_lengthconverter.png" />
+    <None Include="Resources\preview_polefigury.png" />
+    <None Include="Resources\ico_speedconverter.png" />
+    <None Include="Resources\preview_speedconverter.png" />
+    <None Include="Resources\ico_forceconverter.png" />
+    <None Include="Resources\preview_forceconverter.png" />
+    <None Include="Resources\ico_temperatureconverter.png" />
+    <None Include="Resources\preview_temperatureconverter.png" />
+    <Content Include="firemath_KON_icon.ico" />
+    <None Include="Resources\icon_piculator.png" />
+    <None Include="Resources\image %281%29.png" />
+    <None Include="Resources\figura_circle.png" />
+    <Content Include="tools_LJW_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
